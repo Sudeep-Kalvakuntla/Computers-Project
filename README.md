@@ -1,1 +1,2 @@
-# Handwritten Digit Classifier by Anurag Das, Sisir Lakkaraju and Sudeep Kalvakuntla
+# Handwritten Digit Classifier 
+## by Anurag Das, Sisir Lakkaraju and Sudeep Kalvakuntla
