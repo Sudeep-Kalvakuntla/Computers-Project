@@ -16,8 +16,8 @@ root.state('zoomed')
 root.iconbitmap('icon.ico')     
 
 fontStyle = font.Font(family="Lucida Grande", size=20)
-fontStyle2 = font.Font(family='Lucida Grand', size=16)
-fontStyle3 = font.Font(family='Lucida Grand', size=12)
+fontStyle2 = font.Font(family='Lucida Grande', size=16)
+fontStyle3 = font.Font(family='Lucida Grande', size=12)
 result = Label(root, text='', bg='black', fg='white', padx=10, font=fontStyle)
 
 global input_shape
@@ -70,7 +70,7 @@ def modeltrain():
     x_train = x_train[5000:]
     y_train = y_train[5000:]
 
-    digits = model.fit(x_train, y_train, batch_size=32, verbose=1, epochs=15, validation_data=(val_x, val_y), callbacks=call_backs)
+    digits = model.fit(x_train, y_train, batch_size=32, verbose=1, epochs=50, validation_data=(val_x, val_y), callbacks=call_backs)
     model.evaluate(x_test , y_test)
     model.save("digits.model")
 
